@@ -3,55 +3,64 @@
   <head>
     <meta charset="utf-8">
     <title>Jenny Knuth's Future</title>
-      <link rel="stylesheet" href="assets/stylesheets/reset.css">
-      <link rel="stylesheet" href="assets/stylesheets/style.css">
+      <link rel="stylesheet" href="stylesheets/reset.css">
+      <link rel="stylesheet" href="stylesheets/style.css">
   </head>
   <body>
     <header>
       <h1>Jenny Knuth's Future</h1>
     </header>
+    <a href="index.html" target="_blank" title="…up to now…">BACK</a>
 
-  <article id="Future">
-    <h3>
-      10 Things About the Future
-    </h3>
-      <ul>
-        <li>
-          I want to stamp out things that say, "If YES press OK".
-        </li>
-        <li>
-          The correct use of the hyphen/dash is very important to me.
-        </li>
-        <li>
-          I love languages but get tired of squeezing meaning out of linear sentences.
-        </li>
-        <li>
-          For me, design is multi-layered communication: not just linguistic, but also visual communication and interaction design (choreography).
-        </li>
-        <li>
-          I want to learn everything I can about the new frontiers of data visualization.
-        </li>
-        <li>
-          I am beyond excited about the web's ability to not only display data, but to also make it interactive (and beautiful).
-        </li>
-        <li>
-          I want to take something like that geo-biography on the other page and make it into an interactive chart.
-        </li>
-        <li>
-          I want to take things like this interactive bar chart of sea ice extent that I made in D3.js and link it to
-          this animated GIF map of sea ice extent.
-        </li>
-        <li>
-          After gSchool, I want to help make the web more useful and more beautiful.
-          I want to take my curiosity and add to it expertise and a career.
-        </li>
-        <li>
-          I would like to work at a place like Foraker labs or eSource and help their clients visualize their data and provide the best user experience possible.
-        </li>
-      </ul>
-  </article>
-    <button>
-    <a href="~/index.html" target="_blank">BACK</a>
-    </button>
+    <div class="container">
+      <img id="SeaIce" src="stylesheets/images/SeaIceGif.gif" alt="animated GIF of Sea Ice Extent 1979–2014">
+      <h3>Sea Ice Extent</h3>
+      <div id="chart"></div>
+    </div>
+
+    <aside>
+    <article id="Future">
+      <h3>
+        10 Goals
+      </h3>
+        <ul>
+          <li>
+            Stamp out things that say, "If YES press OK".
+          </li>
+          <li>
+            Promote the correct use of the hyphen, en-dash, and em-dash.
+          </li>
+          <li>
+            Learn more about languages: written, spoken, and programming.
+          </li>
+          <li>
+            Use the power of structure, formatting, design, and interaction to improve communication.
+          </li>
+          <li>
+            Learn everything I can about the new frontiers of interactive data visualization.
+          </li>
+          <li>
+            Take something like the geo-biography on the previous page and make it into a living, interactive chart.
+          </li>
+          <li>
+            Take things like this interactive bar chart of sea ice extent that I made in D3.js and link it to
+            the animated GIF map of sea ice extent.
+          </li>
+          <li>
+            Make the web more useful and more beautiful.
+          </li>
+          <li>
+            Take my curiosity and add to it <strong>expertise</strong> and <strong>a career</strong>.
+          </li>
+          <li>
+            Work at a place like Foraker Labs or eSource to provide the best user experience possible and help their clients visualize, understand, and interact with data.
+          </li>
+        </ul>
+    </article>
+  </aside>
+
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="script.js"></script>
+
   </body>
 </html>
