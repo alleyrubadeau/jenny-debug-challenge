@@ -1,7 +1,7 @@
-body {margin: 2.5em; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.5; color: 4b2a1e;}
-
+body {margin: 2.5em; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.5; color: #4b2a1e;}
 body {background-color: gray;}
 #JKBG {background-image: url("images/JKBG.jpg"); background-size: 100%; background-repeat: no-repeat;}
+
 article, aside, figcaption, figure, footer, header, nav, section {display: block;}
 h1, h2, h3 {margin: .5em 0 0; line-height: 1.25;}
 h1 {font-size: 2em;}
@@ -14,11 +14,12 @@ li {margin: 0 0 .75em 0;}
 p, figure {margin: 1em 0;}
 a img {border: none;}
 sup, sub {line-height: 0;}
-header {width: 60%; float: left;}
+.container, header, section {width: 60%; float:left;}
 aside {width: 30%; padding: 2.5em; float: right; vertical-align: top; background-color: gray; background-color: rgba(115, 106, 85, .75); color: white; }
 
-#avatar {display: block; max-width: 100%; height: auto; position: relative; top: -10;}
+#avatar {display: block; max-width: 100%; height: auto; position: relative; top: -22em;}
 #SeaIce {display: block; max-width: 100%; height: auto;}
+
 
 strong {text-transform: uppercase;}
 
