@@ -1,8 +1,6 @@
 var Year = [];
 var SeaIceExt = [];
 
-//d3.selectAll('img').style("display", "none")
-
 	d3.csv('data.csv', function(data) {
 		console.log(data);
 
@@ -12,11 +10,11 @@ var SeaIceExt = [];
 		}
 
 
-	var margin = { top: 100, right: 50, bottom: 100, left: 100 }
+	var margin = { top: 100, right: 50, bottom: 90, left: 50 }
 
 
 
-	var height = 350 - margin.top - margin.bottom,
+	var height = 400 - margin.top - margin.bottom,
 		width = 500  -margin.left - margin.right,
 		barWidth = 50,
 		barOffset = 5;
@@ -26,13 +24,8 @@ var SeaIceExt = [];
 		.range([0, height]);
 
 	var xScale = d3.scale.ordinal()
-	    //.domain([data.map(function(d) { return d.Year; })])//doesn't break, labels axis correctly, but piles up the bar
-		//.domain([array.map(function(d) { return d.Year; })])
-        .domain(d3.range(0, Year.length))
+	  .domain(d3.range(0, Year.length))
 		.rangeBands([0, width], .1);
-		//var xScale = d3.scale.linear()
-		//.domain ([1979, 2014)])
-
 
 	var TempColor;
 
@@ -126,14 +119,8 @@ var SeaIceExt = [];
 	var hAxis = d3.svg.axis()
 		.scale(xScale)
 		.orient('bottom')
-		//.tickValues(Year) //gives first year
-		//.tickValues([Year]) //gives whole "Year" array as one label
-		//.tickValues(data.Year)//to get numbers in the correct places THIS ONE Works!
 		.tickValues(xScale.domain().filter (function (d, i){ return ! ((i-1) % 5)}))
 		.tickFormat(function(d, i) {return d + parseInt(Year[0]);})
-		//.tickValues(data.map(function(d) { return d.Year; })) //gives first year
-		//.tickValues(array.map(function(d) { return d.Year; }))
-		//.filter (function (d, i){ return ! (i % (Year.length/5))});
 
 	var hGuide = d3.select('svg').append('g')
 		hAxis(hGuide)
