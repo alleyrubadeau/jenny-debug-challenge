@@ -146,9 +146,4 @@ var SeaIceExt = [];
     .attr("y", margin.left/2)
     .attr("x", -(margin.top + height/2))
     .text("Sea Ice Extent (in millions of km\u00B2)");
-
-    //d3.select('rect').append('text')
-    //.attr('text-anchor', "start")
-    //.attr("transform", "rotate(-90)")
-    //.text('YEAR')
 });
