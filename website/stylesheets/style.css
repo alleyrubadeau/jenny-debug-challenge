@@ -29,12 +29,11 @@ header {width: 100%; position: absolute; top: 4em; left: 4em;}
 .container {background-color: #c3c6ab; color:#4b2a1e;}
 .title{ position: relative; padding: .3em; left: -.3em;}
 .popbox {display: none;}
-#Current .popbox {display: none;}
-#Summary .popbox {display: none;}
 
 aside {width: 30%; padding: 2.5em; position: absolute; top: 10em; right: 2em; background-color: gray; background-color: rgba(115, 106, 85, .75); color: white; }
 
 #avatar {display: block; max-width: 100%; height: auto; position: relative; top: -3.5em;}
+#JKbio {position: relative; top: -2em;}
 #SeaIce, #chart, svg {display: block; max-width: 100%; height: static; margin-left: auto; margin-right: auto;}
 
 strong {text-transform: uppercase;}
@@ -81,5 +80,5 @@ a:hover {
   }*/
 
 .highlight {
-    background-color: rgba( 255,255,255, 0.3 ); border-radius: 9px;
+  color: #177f9d; background-color: rgba( 255,255,255, 0.3 ); border-radius: 9px;
   }
