@@ -2,17 +2,14 @@ var Year = [];
 var SeaIceExt = [];
 
 	d3.csv('data.csv', function(data) {
-		console.log(data);
+		//console.log(data);
 
 		for (key in data) {
 			Year.push(data[key].Year)
 			SeaIceExt.push(data[key].SeaIceExt)
 		}
 
-
 	var margin = { top: 100, right: 50, bottom: 90, left: 50 }
-
-
 
 	var height = 400 - margin.top - margin.bottom,
 		width = 500  -margin.left - margin.right,

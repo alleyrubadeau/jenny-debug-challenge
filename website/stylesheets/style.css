@@ -1,42 +1,156 @@
-body {margin: 2.5em; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.5em; color: #4b2a1e;}
-body {background-color: gray;}
-#JKBG {background-image: url("images/JKBG.jpg"); background-size: 100%; background-repeat: no-repeat;}
+body {
+  margin: 2.5em;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5em;
+  color: #504b3f;/*brown*/
+  }
 
-article, aside, figcaption, figure, footer, header, nav, section {display: block;}
+body {
+  background-color: #999999;/*gray*/
+  }
 
-h1, h2 {margin-bottom: .5em; line-height: 1em;}
-h1 {font-size: 2em;}
-h2 {font-size: 1.5em;}
-h3 {font-size: 1.2em; text-transform: uppercase;}
-h4 {font-size: 1.14em; font-weight: 300;}
-h5, .axisLabel {font-size: 1em; font-weight: 300; margin-bottom: .5em}
+#JKBG {
+  background-image: url("images/JKBG.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  }
 
-ul, ol {margin: 1em 1em;}
-ul {list-style: disc; padding-left: 1em; padding-right: 2.5em; line-height: 1.5;}
-li {margin: 0 0 .75em 0;}
+article, aside, header, section {
+  display: block;
+  color: inherit;
+  }
 
-p, figure {margin-bottom: 1em;}
+h1, h2 {
+  margin-bottom: .5em;
+  line-height: 1em;
+  }
 
-a {color: rgba( 255,255,255, 0.5 ); text-decoration: none;}
+h1 {
+  font-size: 2em;
+  }
 
-img {border: none;}
+h2 {
+  font-size: 1.5em;
+  }
 
-sup, sub {line-height: 0;}
+h3 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  }
 
-header {width: 100%; position: absolute; top: 4em; left: 4em;}
+h4 {
+  font-size: 1.14em;
+  font-weight: 300;
+  }
 
-.container{width: 45%; height: auto; padding: 2.5em; position: absolute; top: 8em; left: 2em; margin: 2em;}
-.container {background-color: #c3c6ab; color:#4b2a1e;}
-.title{ position: relative; padding: .3em; left: -.3em;}
-.popbox {display: none;}
+h5, .axisLabel {/*for some reason this is not working*/
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: .5em;
+  color: #504b3f;
+  }
 
-aside {width: 30%; padding: 2.5em; position: absolute; top: 10em; right: 2em; background-color: gray; background-color: rgba(115, 106, 85, .75); color: white; }
+strong {
+  text-transform: uppercase;
+  }
 
-#avatar {display: block; max-width: 100%; height: auto; position: relative; top: -3.5em;}
-#JKbio {position: relative; top: -2em;}
-#SeaIce, #chart, svg {display: block; max-width: 100%; height: static; margin-left: auto; margin-right: auto;}
+ul, ol {
+  margin: 1em 1em;
+  }
 
-strong {text-transform: uppercase;}
+ul {
+  list-style: disc;
+  padding-left: 1em;
+  padding-right: 2.5em;
+  line-height: 1.5;
+  }
+
+li {
+  margin-bottom: .75em;
+  }
+
+p {
+  margin-bottom: 1em;
+  }
+
+a {
+  color: rgba( 255,255,255, 0.5 );/*transparent white*/
+  text-decoration: none;
+  }
+
+img {
+  border: none;
+  }
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 4em;
+  left: 4.5em;}
+
+.container{
+  width: 45%;
+  height: auto;
+  padding: 2.5em;
+  position: absolute;
+  top: 8em;
+  left: 2em;
+  margin: 2em;
+  background-color: #c3c6ab;
+  }
+
+.title{
+  cursor: pointer;
+  position: relative;
+  padding: .3em;
+  left: -.3em;
+  }
+
+.popbox {
+  display: none;
+  }
+
+aside {
+  position: absolute;
+  width: 30%;
+  padding: 2.5em;
+  top: 10em;
+  right: 2em;
+  background-color: rgba(146, 141, 118, .75);/*khaki brown of aside box*/
+  color: #fff;/*white*/
+  }
+
+#avatar {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  top: -3.5em;
+  }
+
+#JKbio {
+  position: relative;
+  top: -2em;
+  }
+
+#SeaIce, #chart, #GIF, svg {
+  display: block;
+  max-width: 100%;/*so it is responsive and centered*/
+  margin-left: auto;
+  margin-right: auto;
+  color: #504b3f;}
+
+#MAC {
+  display: block;
+  position: relative;
+  max-width: 50%;/*so it is responsive and centered*/
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 2.5em;
+}
 
 .button a{
   position: absolute;
@@ -47,10 +161,6 @@ strong {text-transform: uppercase;}
   color: #fff;
   }
 
-a:hover {
-  text-decoration: none;
-  color: #177f9d;}
-
 .button {
   	position: fixed;
     z-index: 5;
@@ -59,10 +169,16 @@ a:hover {
   	right: 50px;
   	width: 65px;
   	height: 65px;
-  	background-color: rgba( 255,255,255, 0.3 );
+  	background-color: rgba( 255,255,255, 0.3);
   }
 
+  a:hover {
+    text-decoration: none;
+    color: #95d5f0; /*blue*/
+    }
+
   .reload {
+    cursor: pointer;
     position: absolute;
     padding-bottom: .5em;
     border-radius: 10px;
@@ -72,7 +188,7 @@ a:hover {
     width: 5.5em;
   	height: 1em;
   	background-color: rgba( 255,255,255, 0.3 );
-    color: #177f9d;
+    color: #95d5f0;
   }
 
   /*.reload:hover {
@@ -80,5 +196,7 @@ a:hover {
   }*/
 
 .highlight {
-  color: #177f9d; background-color: rgba( 255,255,255, 0.3 ); border-radius: 9px;
+  color: #95d5f0;
+  background-color: rgba( 255,255,255, 0.3 );
+  border-radius: 9px;
   }
