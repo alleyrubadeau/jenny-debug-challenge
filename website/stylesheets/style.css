@@ -52,6 +52,12 @@ h5, .axisLabel {/*for some reason this is not working*/
   color: #504b3f;
   }
 
+.caption {
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
 strong {
   text-transform: uppercase;
   }
@@ -178,6 +184,7 @@ aside {
     }
 
   .reload {
+    text-align: center;
     cursor: pointer;
     position: absolute;
     padding-bottom: .5em;
