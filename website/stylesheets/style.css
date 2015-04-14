@@ -118,6 +118,15 @@ header {
   display: none;
   }
 
+/*trying to set a style where, when .popbox is in "focus" it is in the viewport*/
+/*.popbox:focus {
+  display: block;
+  position: absolute;
+  vertical-align: top;
+  top: 0;
+  right:0;
+}*/
+
 aside {
   position: absolute;
   width: 30%;
