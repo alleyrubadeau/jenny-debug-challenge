@@ -9,7 +9,7 @@ var SeaIceExt = [];
 			SeaIceExt.push(data[key].SeaIceExt)
 		}
 
-	var margin = { top: 100, right: 50, bottom: 90, left: 50 }
+	var margin = { top: 100, right: 50, bottom: 90, left: 50 };
 
 	var height = 400 - margin.top - margin.bottom,
 		width = 500  -margin.left - margin.right,

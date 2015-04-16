@@ -156,7 +156,7 @@ aside {
   max-width: 100%;/*so it is responsive and centered*/
   margin-left: auto;
   margin-right: auto;
-  color: #504b3f;}
+  color: #504b3f;}/*for some reason this is not working*/
 
 #MAC {
   display: block;
@@ -188,17 +188,17 @@ aside {
   	background-color: rgba( 255,255,255, 0.3);
   }
 
-  a:hover {
+a:hover {
     text-decoration: none;
     color: #95d5f0; /*blue*/
     }
 
-  .reload {
+.reload {
     text-align: center;
     cursor: pointer;
     position: absolute;
     padding-bottom: .5em;
-    border-radius: 10px;
+    border-radius: 9px;
     top: 425px;
     right: 6em;
     z-index: 3;
@@ -208,10 +208,12 @@ aside {
     color: #63A3B6;/*darker blue*/
   }
 
-  /*.reload:hover {
+/*this to to highlight a button that is not already white*/
+.highlight-inverse {
     color: #fff;
-  }*/
+  }
 
+/*this is to highlight areas that are clickable*/
 .highlight {
   color: #95d5f0;
   background-color: rgba( 255,255,255, 0.3 );
