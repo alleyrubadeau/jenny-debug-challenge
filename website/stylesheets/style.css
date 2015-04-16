@@ -104,7 +104,7 @@ header {
   top: 8em;
   left: 2em;
   margin: 2em;
-  background-color: #c3c6ab;
+  background-color: #c3c6ab; /*gold/tan*/
   }
 
 .title{
@@ -120,6 +120,7 @@ header {
 
 /*trying to set a style where, when .popbox is in "focus" it is in the viewport*/
 /*.popbox:focus {
+  background-color: pink;
   display: block;
   position: absolute;
   vertical-align: top;
@@ -204,7 +205,7 @@ aside {
     width: 5.5em;
   	height: 1em;
   	background-color: rgba( 255,255,255, 0.3 );
-    color: #95d5f0;
+    color: #63A3B6;/*darker blue*/
   }
 
   /*.reload:hover {
