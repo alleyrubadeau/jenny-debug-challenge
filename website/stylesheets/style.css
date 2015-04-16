@@ -49,7 +49,7 @@ h5, .axisLabel {/*for some reason this is not working*/
   font-size: 1em;
   font-weight: 300;
   margin-bottom: .5em;
-  color: #504b3f;
+  color: pink;
   }
 
 .caption {
@@ -156,7 +156,9 @@ aside {
   max-width: 100%;/*so it is responsive and centered*/
   margin-left: auto;
   margin-right: auto;
-  color: #504b3f;}/*for some reason this is not working*/
+  color: #504b3f;/*figured out why this not working: need to get
+  my styling out of the chart.js file an into my css!*/
+}
 
 #MAC {
   display: block;
@@ -208,7 +210,7 @@ a:hover {
     color: #63A3B6;/*darker blue*/
   }
 
-/*this to to highlight a button that is not already white*/
+/*this to highlight a button that is not already white*/
 .highlight-inverse {
     color: #fff;
   }

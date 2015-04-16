@@ -128,16 +128,14 @@ var SeaIceExt = [];
 			.style({stroke: '#000'})
 
 	d3.select('svg').append("text")
-	.attr('class', 'axisLabel')  //fix when styling
-    .attr('text-anchor', "middle")
+		.attr('class', 'axisLabel')  //fix when styling
+    .attr('text-anchor', 'middle')
     .attr("x", (margin.left)+width/2)
     .attr("y", height + margin.top + margin.bottom/2)
     .text("Year")
 
-    var squared = 2;
-
-    d3.select('svg').append('text')
-	.attr ('class', 'axisLabel')  //fix when styling
+  d3.select('svg').append('text')
+		.attr ('class', 'axisLabel')  //fix when styling
     .attr('text-anchor', "middle")
     .attr("transform", "rotate(-90)")
     .attr("y", margin.left/2)
